@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOCckGvdMs7pReHr3aliOYz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sathwik1645/SE-LAB-1st-task/blob/main/SE%20lab%201st%20task%201.0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pv1FugaOyn4A",
+        "outputId": "ba02f126-be62-43cc-b757-85409be168ce"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 5\n",
+            "The factorial of 5 is 120\n"
+          ]
+        }
+      ],
+      "source": [
+        "def factorial(n):\n",
+        "    if n == 0 or n == 1:\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return n * factorial(n - 1)\n",
+        "number = int(input(\"Enter a number: \"))\n",
+        "result = factorial(number)\n",
+        "print(f\"The factorial of {number} is {result}\")"
+      ]
+    }
+  ]
+}
